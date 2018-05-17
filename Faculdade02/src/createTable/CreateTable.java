@@ -43,6 +43,8 @@ public class CreateTable {
 		
 	}
 	
+	
+	
 	public Connection obterConexao(){
 		
 		try {
