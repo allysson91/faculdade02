@@ -19,6 +19,7 @@ public class cargoDAO {
 			stmt.setString(1, cargo.getNome());
 			stmt.setString(2, cargo.getDescricao());
 			stmt.executeUpdate();
+			conexao.close();
 
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -42,6 +43,7 @@ public class cargoDAO {
 				System.out.println("Nome cargo: " + rs.getString(2));
 				System.out.println("Descrição cargo: " + rs.getString(3) + "\n");
 			}
+			conexao.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -64,6 +66,7 @@ public class cargoDAO {
 				System.out.println("Nome cargo: " + rs.getString(2));
 				System.out.println("Descrição cargo: " + rs.getString(3) + "\n");
 			}
+			conexao.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -81,6 +84,7 @@ public class cargoDAO {
 			PreparedStatement stmt = conexao.prepareStatement(sql);
 			stmt.setString(1, cargo.getNome());
 			stmt.executeUpdate();
+			conexao.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -100,6 +104,7 @@ public class cargoDAO {
 			stmt.setString(2, cargo.getDescricao());
 			stmt.setInt(3, cargo.getIdCargo());
 			stmt.executeUpdate();
+			conexao.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

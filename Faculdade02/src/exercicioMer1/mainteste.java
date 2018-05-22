@@ -21,6 +21,8 @@ public class mainteste {
 	
 	public void teste() throws SQLException {
 
+		
+		// testes de crud mo da fo quer
 		cargoVO cargo = new cargoVO();
 		cargoDAO dao = new cargoDAO();
 		//dao.listarCargo();
