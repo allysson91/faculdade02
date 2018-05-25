@@ -1,6 +1,6 @@
 package exercicioMer1;
 
-public class funcionarioVO {
+public class FuncionarioVO {
 	
 	private int idFuncionario;
 	private String cpf;
@@ -12,12 +12,12 @@ public class funcionarioVO {
 	private int departamentoId;
 	private int cargoId;
 	
-	public funcionarioVO() {
+	public FuncionarioVO() {
 		super();
 		
 	}
 
-	public funcionarioVO(int idFuncionario, String cpf, String nome, String sexo, String dataNascimeto, double salario,
+	public FuncionarioVO(int idFuncionario, String cpf, String nome, String sexo, String dataNascimeto, double salario,
 			int supervisor, int departamentoId, int cargoId) {
 		super();
 		this.idFuncionario = idFuncionario;

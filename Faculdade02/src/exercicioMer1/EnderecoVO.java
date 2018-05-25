@@ -1,6 +1,6 @@
 package exercicioMer1;
 
-public class enderecoVO {
+public class EnderecoVO {
 	
 	private int idEndereco;
 	private int codFuncionario;
@@ -10,12 +10,12 @@ public class enderecoVO {
 	private String cidade;
 	private String cep;
 	
-	public enderecoVO() {
+	public EnderecoVO() {
 		super();
 		
 	}
 	
-	public enderecoVO(int idEndereco, int codFuncionario, String rua, int numero, String bairro, String cidade,
+	public EnderecoVO(int idEndereco, int codFuncionario, String rua, int numero, String bairro, String cidade,
 			String cep) {
 		super();
 		this.idEndereco = idEndereco;

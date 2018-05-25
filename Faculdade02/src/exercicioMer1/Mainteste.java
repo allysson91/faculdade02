@@ -3,15 +3,15 @@ package exercicioMer1;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class mainteste {
+public class Mainteste {
 	static Scanner scan = new Scanner (System.in);
-	criaTabelas cria = new criaTabelas();
+	CriaTabelas cria = new CriaTabelas();
 	
 	public static void main(String[] args) {
 		
 		//new mainteste().cria.criacaoTabela();
 		try {
-			new mainteste().teste();
+			new Mainteste().teste();
 		} catch (SQLException e) {
 			System.out.println("erro x048146520");
 			e.printStackTrace();
@@ -23,8 +23,8 @@ public class mainteste {
 
 		
 		// testes de crud mo da fo quer
-		cargoVO cargo = new cargoVO();
-		cargoDAO dao = new cargoDAO();
+		CargoVO cargo = new CargoVO();
+		CargoDAO dao = new CargoDAO();
 		//dao.listarCargo();
 		System.out.println("Informe id: ");
 		cargo.setIdCargo(scan.nextInt());

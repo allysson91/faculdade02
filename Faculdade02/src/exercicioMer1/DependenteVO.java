@@ -1,6 +1,6 @@
 package exercicioMer1;
 
-public class dependenteVO {
+public class DependenteVO {
 	
 	private int idFuncionario;
 	private int idDependente;
@@ -9,12 +9,12 @@ public class dependenteVO {
 	private String parentesco;
 	private String dataNascimento;
 	
-	public dependenteVO() {
+	public DependenteVO() {
 		super();
 		
 	}
 	
-	public dependenteVO(int idFuncionario, int idDependente, String nome, String sexo, String parentesco,
+	public DependenteVO(int idFuncionario, int idDependente, String nome, String sexo, String parentesco,
 			String dataNascimento) {
 		super();
 		this.idFuncionario = idFuncionario;

@@ -4,12 +4,12 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class criaTabelas {
+public class CriaTabelas {
 
 
 	public void criacaoTabela() throws SQLException {
 
-		 conexaoBanco con = new conexaoBanco();
+		 ConexaoBanco con = new ConexaoBanco();
 		 Connection conexao = con.conectar();
 		 String comando = null;
 		 comando = "create table vendam(ven_id integer primary key, ven_nome_vendedor varchar (45))";

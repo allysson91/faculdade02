@@ -1,18 +1,18 @@
 package exercicioMer1;
 
-public class departamentoVO {
+public class DepartamentoVO {
 
 	private int idDepartamento;
 	private String nome;
 	private int idGerente;
 	private String dataInicoGerente;
 	
-	public departamentoVO() {
+	public DepartamentoVO() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public departamentoVO(int idDepartamento, String nome, int idGerente, String dataInicoGerente) {
+	public DepartamentoVO(int idDepartamento, String nome, int idGerente, String dataInicoGerente) {
 		super();
 		this.idDepartamento = idDepartamento;
 		this.nome = nome;

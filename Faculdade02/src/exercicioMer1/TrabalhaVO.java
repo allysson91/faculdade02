@@ -1,17 +1,17 @@
 package exercicioMer1;
 
-public class trabalhaVO {
+public class TrabalhaVO {
 
 	private int idFUncionario;
 	private int idProjeto;
 	private int horasTrabalhadas;
 	
-	public trabalhaVO() {
+	public TrabalhaVO() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 	
-	public trabalhaVO(int idFUncionario, int idProjeto, int horasTrabalhadas) {
+	public TrabalhaVO(int idFUncionario, int idProjeto, int horasTrabalhadas) {
 		super();
 		this.idFUncionario = idFUncionario;
 		this.idProjeto = idProjeto;

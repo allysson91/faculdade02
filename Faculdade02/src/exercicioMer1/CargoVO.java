@@ -1,17 +1,17 @@
 package exercicioMer1;
 
-public class cargoVO {
+public class CargoVO {
 
 	private int idCargo;
 	private String nome;
 	private String descricao;
 	
-	public cargoVO() {
+	public CargoVO() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 	
-	public cargoVO(int idCargo, String nome, String descricao) {
+	public CargoVO(int idCargo, String nome, String descricao) {
 		super();
 		this.idCargo = idCargo;
 		this.nome = nome;

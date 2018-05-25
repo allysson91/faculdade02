@@ -6,12 +6,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class cargoDAO {
+public class CargoDAO {
 
-	public void inserirCargo(cargoVO cargo) {
+	public void inserirCargo(CargoVO cargo) {
 
 		try {
-			conexaoBanco con = new conexaoBanco();
+			ConexaoBanco con = new ConexaoBanco();
 			Connection conexao = con.conectar();
 			String sql = null;
 			sql = ("insert into cargo (car_nome, car_descricao) values (?, ?)");
@@ -30,7 +30,7 @@ public class cargoDAO {
 
 	public void listarCargo() {
 
-		conexaoBanco con = new conexaoBanco();
+		ConexaoBanco con = new ConexaoBanco();
 		Connection conexao = con.conectar();
 		String sql = null;
 		sql = "select * from cargo";
@@ -51,9 +51,9 @@ public class cargoDAO {
 
 	}
 
-	public void buscarCargo(cargoVO cargo) {
+	public void buscarCargo(CargoVO cargo) {
 
-		conexaoBanco con = new conexaoBanco();
+		ConexaoBanco con = new ConexaoBanco();
 		Connection conexao = con.conectar();
 		String sql = null;
 		sql = "select * from cargo where car_nome like '" + cargo.getNome() + "%'";
@@ -74,10 +74,10 @@ public class cargoDAO {
 
 	}
 
-	public void excluirCargo(cargoVO cargo) {
+	public void excluirCargo(CargoVO cargo) {
 
 		try {
-			conexaoBanco con = new conexaoBanco();
+			ConexaoBanco con = new ConexaoBanco();
 			Connection conexao = con.conectar();
 			String sql = null;
 			sql = "delete from cargo where car_nome = ?";
@@ -92,10 +92,10 @@ public class cargoDAO {
 
 	}
 
-	public void alterarCargo(cargoVO cargo) {
+	public void alterarCargo(CargoVO cargo) {
 
 		try {
-			conexaoBanco con = new conexaoBanco();
+			ConexaoBanco con = new ConexaoBanco();
 			Connection conexao = con.conectar();
 			String sql = null;
 			sql = "update cargo set car_nome = ?, car_descricao = ? where car_id = ?";

@@ -1,18 +1,18 @@
 package exercicioMer1;
 
-public class projeto {
+public class Projeto {
 	
 	private int idProjeto;
 	private int idDepartamento;
 	private String nome;
 	private String descricao;
 	
-	public projeto() {
+	public Projeto() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public projeto(int idProjeto, int idDepartamento, String nome, String descricao) {
+	public Projeto(int idProjeto, int idDepartamento, String nome, String descricao) {
 		super();
 		this.idProjeto = idProjeto;
 		this.idDepartamento = idDepartamento;
